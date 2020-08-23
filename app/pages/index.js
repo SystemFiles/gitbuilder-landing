@@ -14,8 +14,16 @@ export default function Home() {
 			</Head>
 
 			<Grid className={styles.navbar} container>
-				<Grid className={styles.leftAlign} item xs={4}>
+				<Grid className='leftAlign' item xs={12} sm={4}>
 					<img src='/assets/gitbuilder-logo.png' alt='gitbuilder-logo' aria-label='gitbuilder logo' />
+				</Grid>
+				<Grid className='rightAlign' item xs={0} sm={8}>
+					<a className={styles.navLink} href='#' rel='noreferrer'>
+						Features
+					</a>
+					<Button varient='secondary' src='#' external>
+						Documentation
+					</Button>
 				</Grid>
 			</Grid>
 
@@ -26,7 +34,7 @@ export default function Home() {
 						<h2>The simple git builder</h2>
 						<Grid className={styles.heroButtons} container>
 							<Grid item xs={12}>
-								<Button src='#' varient='primary'>
+								<Button src='#' varient='primary' external>
 									View Source
 								</Button>
 								<Button src='#' varient='secondary'>
@@ -40,6 +48,12 @@ export default function Home() {
 					<div className={styles.heroRight}>
 						<img width='400px' src='/assets/app_thumbnail.png' alt='app thumbnail' />
 					</div>
+				</Grid>
+			</Grid>
+
+			<Grid className={styles.aboutSection} container>
+				<Grid item xs={12}>
+					<h1>About</h1>
 				</Grid>
 			</Grid>
 

@@ -7,20 +7,22 @@ export class Button extends Component {
 		return {
 			src      : PropTypes.string,
 			children : PropTypes.string,
-			varient  : PropTypes.string
+			varient  : PropTypes.string,
+			external : PropTypes.bool
 		}
 	}
 
 	static defaultProps = {
-		src     : '#',
-		varient : 'primary'
+		src      : '#',
+		varient  : 'primary',
+		external : false
 	}
 
 	render() {
 		return (
 			<a
 				className={this.props.varient === 'primary' ? styles.ButtonPrimary : styles.ButtonSecondary}
-				target='_blank'
+				target={this.props.external ? '_blank' : null}
 				rel='noopener noreferrer'
 				href={this.props.src}
 			>
