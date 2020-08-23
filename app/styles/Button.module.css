@@ -1,0 +1,47 @@
+.ButtonPrimary {
+	text-decoration: none;
+	background-color: rgb(2 132 254);
+	width: 100%;
+	max-width: 160px;
+	display: inline-block;
+	padding: 12.5px 0px;
+	border-radius: 7px;
+	color: #fff;
+	font-size: 11pt;
+	font-weight: 200;
+	text-align: center;
+	transition: all 500ms;
+}
+
+.ButtonPrimary:hover {
+	opacity: 0.8;
+}
+
+.ButtonSecondary {
+	text-decoration: none;
+	background-color: #fff;
+	width: 100%;
+	max-width: 160px;
+	display: inline-block;
+	padding: 12.5px 0px;
+	border-radius: 7px;
+	color: #4e5d78;
+	border: 1px solid rgba(78, 93, 120, 0.14);
+	font-size: 11pt;
+	font-weight: 200;
+	text-align: center;
+	transition: all 500ms;
+}
+
+.ButtonSecondary svg {
+	vertical-align: middle;
+	margin-top: -12px;
+	margin-bottom: -10px;
+	font-size: 16pt;
+	margin-right: 10px;
+}
+
+.ButtonSecondary:hover {
+	background-color: rgba(78, 93, 120, 0.05);
+	border: 1px solid rgba(78, 93, 120, 0.3);
+}

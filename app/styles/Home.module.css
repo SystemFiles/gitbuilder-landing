@@ -1,0 +1,96 @@
+/*
+  Color Theme:
+  Backgrounds: #FFFFFF,
+  Titles: #333333
+  Subtext: #4E5D78
+  Secondary: #0070f3;
+*/
+
+.container {
+	min-height: 100vh;
+	margin: 0 10px;
+}
+
+.navbar {
+	width: 100%;
+	padding: 10px 0;
+	border-bottom: 1px solid #eaeaea;
+}
+
+.navbar img {
+	margin-left: 10%;
+	width: 45%;
+	max-width: 115px;
+}
+
+.heroSection {
+	text-align: center;
+	padding: 2.4rem 0rem;
+}
+
+.heroSection h1 {
+	font-size: 32pt;
+	font-weight: 300;
+	color: #333333;
+}
+
+.heroSection h2 {
+	font-size: 16pt;
+	font-weight: 200;
+	color: #4e5d78;
+}
+
+.heroLeft {
+	padding: 10px 0;
+	margin: 0;
+}
+
+.heroRight {
+	vertical-align: middle;
+	text-align: center;
+}
+
+.heroRight img {
+	max-width: 100%;
+	position: relative;
+	top: 50%;
+	transform: translateY(50%);
+	border-radius: 10px;
+	box-shadow: 0 16px 24px -2px rgba(0, 0, 0, 0.13);
+}
+
+.heroButtons {
+	margin-top: 50px;
+	padding: 0 10px;
+	text-align: center;
+}
+
+.heroButtons div a {
+	margin: 5px;
+}
+
+.footer {
+	width: 100%;
+	height: 100px;
+	padding-top: 40px;
+	border-top: 1px solid #eaeaea;
+	position: absolute;
+	bottom: 0px;
+}
+
+.footer a {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.hightlight {
+	margin-left: 8px;
+	color: #0070f3;
+}
+
+@media (min-width: 1296px) {
+	.container {
+		margin: 0 15%;
+	}
+}
