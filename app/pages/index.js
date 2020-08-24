@@ -27,8 +27,8 @@ export default function Home() {
 					<Link className={styles.navLink} to='features' offset={-70} duration={500} spy smooth>
 						Features
 					</Link>
-					<Button varient='secondary' src='https://github.com/SystemFiles/gitbuilder-io#readme' external>
-						Documentation
+					<Button varient='secondary' src='https://www.npmjs.com/package/gitbuilder-io' external>
+						Download
 					</Button>
 				</Grid>
 			</Grid>
