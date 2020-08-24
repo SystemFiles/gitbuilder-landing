@@ -21,4 +21,4 @@ jobs:
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
           repository: ${{ secrets.DOCKER_USERNAME }}/gitbuilder-landing
-          tags: ${{ package-version }}
+          tags: ${{ steps.package-version.outputs.current-version}}
