@@ -1,0 +1,35 @@
+/*
+    Color Theme:
+    Backgrounds: #FFFFFF,
+    Titles: #333333
+    Subtext: #4E5D78
+    Secondary: #0070f3;
+*/
+
+.FeatureCard {
+	background-color: #fff;
+	width: 95%;
+	padding: 20px;
+	height: 200px;
+	border-radius: 10px;
+	border: 1px solid rgba(78, 93, 120, 0.08);
+	box-shadow: 0 16px 24px -2px rgba(0, 0, 0, 0.08);
+}
+
+.FeatureCard svg {
+	font-size: 16pt;
+}
+
+.FeatureCard h2 {
+	font-size: 16pt;
+	font-weight: 200;
+	color: #333;
+}
+
+.FeatureCard p {
+	font-weight: 100;
+	font-size: 9pt;
+	padding-left: 0;
+	color: #4e5d78;
+	text-transform: lowercase;
+}
