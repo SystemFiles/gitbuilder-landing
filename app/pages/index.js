@@ -5,7 +5,9 @@ import PlayArrowIcon from '@material-ui/icons/PlayArrow'
 import BuildIcon from '@material-ui/icons/Build'
 import CodeIcon from '@material-ui/icons/Code'
 import SecurityIcon from '@material-ui/icons/Security'
+import { Link, animateScroll as scroll } from 'react-scroll'
 
+// My components
 import Button from '../components/Button'
 import FeatureCard from '../components/FeatureCard'
 
@@ -22,10 +24,10 @@ export default function Home() {
 					<img src='/assets/gitbuilder-logo.png' alt='gitbuilder-logo' aria-label='gitbuilder logo' />
 				</Grid>
 				<Grid className='rightAlign' item xs={0} sm={8}>
-					<a className={styles.navLink} href='#' rel='noreferrer'>
+					<Link className={styles.navLink} to='features' offset={-70} duration={500} spy smooth>
 						Features
-					</a>
-					<Button varient='secondary' src='#' external>
+					</Link>
+					<Button varient='secondary' src='https://github.com/SystemFiles/gitbuilder-io#readme' external>
 						Documentation
 					</Button>
 				</Grid>
@@ -73,7 +75,7 @@ export default function Home() {
 					</p>
 				</Grid>
 				<Grid className={styles.aboutFeatures} container item xs={12}>
-					<h1>Features</h1>
+					<h1 id='features'>Features</h1>
 					<Grid item xs={12}>
 						<p>See why GitBuilder.io is worth using!</p>
 					</Grid>
@@ -95,6 +97,17 @@ export default function Home() {
 								authentication for secure project generation.
 							</FeatureCard>
 						</Grid>
+					</Grid>
+				</Grid>
+				<Grid className={styles.demoSection} container item xs={12}>
+					<Grid item xs={12}>
+						<img
+							src='/assets/gitbuilder-demo.gif'
+							width='65%'
+							alt='Demo animated gif of gitbuilder'
+							aria-label='Animated gif of gitbuilder'
+						/>
+						<p>Gitbuilder.io in Action! (look how fast you can start a project)</p>
 					</Grid>
 				</Grid>
 			</Grid>
