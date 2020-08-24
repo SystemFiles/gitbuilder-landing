@@ -19,6 +19,7 @@
 	font-weight: 200;
 	text-align: center;
 	transition: all 500ms;
+	cursor: pointer;
 }
 
 .ButtonPrimary:hover {
@@ -26,6 +27,7 @@
 }
 
 .ButtonSecondary {
+	cursor: pointer;
 	text-decoration: none;
 	background-color: #fff;
 	width: 100%;

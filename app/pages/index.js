@@ -23,7 +23,7 @@ export default function Home() {
 				<Grid className='leftAlign' item xs={12} sm={4}>
 					<img src='/assets/gitbuilder-logo.png' alt='gitbuilder-logo' aria-label='gitbuilder logo' />
 				</Grid>
-				<Grid className='rightAlign' item xs={0} sm={8}>
+				<Grid className='rightAlign' item sm={8}>
 					<Link className={styles.navLink} to='features' offset={-70} duration={500} spy smooth>
 						Features
 					</Link>
@@ -40,10 +40,10 @@ export default function Home() {
 						<h2>The simple git builder</h2>
 						<Grid className={styles.heroButtons} container>
 							<Grid item xs={12}>
-								<Button src='#' varient='primary' external>
+								<Button src='https://github.com/SystemFiles/gitbuilder-io' varient='primary' external>
 									View Source
 								</Button>
-								<Button src='#' varient='secondary'>
+								<Button src='demo' varient='secondary' useScroll>
 									<PlayArrowIcon /> Watch Demo
 								</Button>
 							</Grid>
@@ -99,7 +99,7 @@ export default function Home() {
 						</Grid>
 					</Grid>
 				</Grid>
-				<Grid className={styles.demoSection} container item xs={12}>
+				<Grid id='demo' className={styles.demoSection} container item xs={12}>
 					<Grid item xs={12}>
 						<img
 							src='/assets/gitbuilder-demo.gif'
