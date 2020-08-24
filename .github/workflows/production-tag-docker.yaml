@@ -22,12 +22,14 @@ jobs:
         with:
           docker_version: 19.03.12
           docker_channel: stable
-      - name: Pull Current Image
+      - name: Add Stable and Latest tags
         env:
           IMAGE_NAME: gitbuilder-landing
         run: |
           set -x
           docker version
+          echo "Logging into docker registry..."
+          echo "${{ secrets.DOCKER_PASSWORD }}" | docker login -u "${{ secrets.DOCKER_USERNAME }}" --password-stdin
           echo "Pulling docker image from registry..."
           docker pull ${{ secrets.DOCKER_USERNAME }}/$IMAGE_NAME:${{ steps.package-version.outputs.current-version}}
           echo "Pushing to Docker Registry..."
