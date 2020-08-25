@@ -7,7 +7,7 @@ export class FeatureCard extends Component {
 			<div className={styles.FeatureCard}>
 				<div>{this.props.icon}</div>
 				<h2>{this.props.title}</h2>
-				<p>{this.props.children}</p>
+				<p className={styles.FeatureCardDescription}>{this.props.children}</p>
 			</div>
 		)
 	}
