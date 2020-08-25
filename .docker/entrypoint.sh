@@ -5,4 +5,4 @@ if [[ -z $PORT ]]; then
 fi
 
 echo "Starting client server on PORT=${PORT} ..."
-serve -s ./build/ -l $PORT
+npm start
